@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8" />
+    <title>Gestão de Restaurante</title>
+    <script src="/scripts/script.js" defer></script>
+    <link type="text/css" rel="stylesheet" href="/styles/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 30px;
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #45a049;
+        }
+
+        #pratos {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body onload="apresentar();">
+    <h1>Ementa:</h1>
+    <div id="pratos"></div>
+
+    <h1>Ações:</h1>
+    <a href="javascript:acrescentar();">Acrescentar</a>
+    <a href="javascript:remover();">Remover</a>
+    <a href="javascript:procurar();">Procurar</a>
+</body>
+</html>
